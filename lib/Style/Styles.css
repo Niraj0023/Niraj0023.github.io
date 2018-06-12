@@ -146,6 +146,8 @@ li.navChild:hover {
     text-shadow: 2px 2px 32px rgba(0,255,255,1.6);
     white-space: nowrap;
     font-size: 150%;
+     -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
 li a{
