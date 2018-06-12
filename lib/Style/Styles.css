@@ -87,6 +87,9 @@ li:hover {
 .aboutDIV {
     width: 70%;
     color:#fff;
+    font-family: Garamond;/*Comic Sans MS;*/
+    text-align: center;
+    font-size: 200%;
 }
 
 .imgSize {
@@ -142,6 +145,7 @@ li.navChild:hover {
     color: rgba(0,255,255,1.6);
     text-shadow: 2px 2px 32px rgba(0,255,255,1.6);
     white-space: nowrap;
+    font-size: 150%;
 }
 
 li a{
