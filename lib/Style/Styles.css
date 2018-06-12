@@ -7,7 +7,7 @@
 
 body {
 	/* .. this mean go one level up */
-	background-image : url('../../lib/Images/Linen-Texture-600x428.jpg');
+	background-image : url('../../lib/Images/free-wallpaper.jpg');
 	margin: 0px;
 }
 
@@ -16,7 +16,8 @@ body {
 	position: fixed;
 	/*background-color: #333;*/
 	width: 99vw;
-	top: 0px;
+	top: -50px; /* Hide the navbar 50 px outside of the top view */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .button {
@@ -37,7 +38,7 @@ body {
 
 .button2 {
     /*background-color: #333; */
-    background-image : url('../../lib/Images/Linen-Texture-600x428.jpg');
+    background-image : url('../../lib/Images/free-wallpaper.jpg');
     color: rgba(0,255,255,0.6); 
     /*border: 2px solid #008CBA;*/
     border: none;
@@ -45,7 +46,7 @@ body {
 
 .button2:hover {
     /*background-color: #333;*/
-    background-image : url('../../lib/Images/Linen-Texture-600x428.jpg');
+    background-image : url('../../lib/Images/free-wallpaper.jpg');
     color: rgba(0,255,255,1.6);
     box-shadow: 0 12px 16px 0 rgba(0,255,255,0.3), 0 17px 50px 0 rgba(0,255,255,0.3);
 }
