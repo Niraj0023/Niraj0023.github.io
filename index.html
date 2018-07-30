@@ -5,21 +5,42 @@
         <meta name="viewport" content = "width=device-width, initial-scale=1.0, user-scalable=no">
         <title>Responsive Portfolio</title>
         <script src="lib/jquery-3.3.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="lib/jquery-migrate-1.4.1.js"></script>
         <link href="lib/Style/Styles.css" rel="stylesheet" type="text/css"/>
+        <link href="lib/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="lib/Script/scripts.js"></script>
+        <script src="lib/jquery.mCustomScrollbar.concat.min.js"></script>
     </head>
     <body>
         
         <div id="headerId" class="header">
 
             <ul id="navbar" class="navParent">
+                <li class="navChild navHomeFlex">
+                    <div><a id="homeTagId" href="#aboutNiraj"><b class="hoverFont">Home</b></a></div>
+                    <div class="tripleHide"><a href="javascript:void(0);" class="icon iconOpen hoverFont">&#9776;</a></div>
+                    <div class="crossHide"><a href="javascript:void(0);" class="icon iconClose hoverFont">&#9932;</a></div>
+                </li>
+                <li class="navChild navDisResponsive"><a id="aboutTagId" href="#aboutMeId"><b class="hoverFont">About</b></a></li>
+                <li class="navChild navDisResponsive"><a id="technoTagId" href="#techId"><b class="hoverFont">Technology Interest</b></a></li>
+                <li class="navChild navDisResponsive"><a id="ExprTagId" href="#experienceId"><b class="hoverFont">Professional Experience</b></a></li>
+                <li class="navChild navDisResponsive"><a id="projTagId" href="#projectId"><b class="hoverFont">Project Section</b></a></li>
+            </ul>
+
+            <!--<ul id="navbar" class="navParent">
                 <li class="navChild"><a id="homeTagId" href="#aboutNiraj"><b>Home</b></a></li>
                 <li class="navChild"><a id="aboutTagId" href="#aboutMeId"><b>About</b></a></li>
                 <li class="navChild"><a id="technoTagId" href="#techId"><b>Technology Interest</b></a></li>
                 <li class="navChild"><a id="ExprTagId" href="#experienceId"><b>Professional Experience</b></a></li>
                 <li class="navChild"><a id="projTagId" href="#projectId"><b>Project Section</b></a></li>
-            </ul>
-
+            </ul>-->
+            
+            
         </div>
         
         <div class="main_container">
@@ -32,22 +53,55 @@
             </div>    
         
         
-            <div class="sub_container" id="aboutMeId">
-                <div class="aboutDIV">
-                    <h4 class="aboutHead">About Me</h4>
+            <div class="aboutDivNew" id="aboutMeId">
+                <div><h4 class="aboutHead">About Me</h4></div>
+                <div class="sub_contAbout">
+                    <div class="aboutDIV">
+                        <span style="color:rgba(0,255,255,1.3)">Qualification :</span> B.Tech, Punjab Technical University/2010 - 14 <br/><br/>
+                        <span style="color:rgba(0,255,255,1.3)">Hobbies :</span>  Watching Movies, Reading Books, Listening Music. <br/><br/>
+                        <span style="color:rgba(0,255,255,1.3)">Work Experience :</span> 2.5+ years as a <a class="linkStar" href="#experienceId"><span> Full stack developer</span></a>.<br/><br/>
+                        <span style="color:rgba(0,255,255,1.3)">Projects :</span> Total <a class="linkStar" href="#projectId"><span>4 Projects</span></a> I have worked on till now.
 
-                    <span style="color:rgba(0,255,255,1.3)">Qualification :</span> B.Tech, Punjab Technical University/2010 - 14 <br/><br/>
-                    <span style="color:rgba(0,255,255,1.3)">Hobbies :</span>  Watching Movies, Reading Books, Listening Music. <br/><br/>
-                    <span style="color:rgba(0,255,255,1.3)">Work Experience :</span> 2.5+ years as a <a class="linkStar" href="#experienceId"><span> Full stack developer</span></a>.<br/><br/>
-                    <span style="color:rgba(0,255,255,1.3)">Projects :</span> Total <a class="linkStar" href="#projectId"><span>4 Projects</span></a> I have worked on till now.
+                    </div> 
+                    <div class="imgDivScrl" id="imgScrlId" style="align-items: center;">
+                        <div>
+                            <img id="colorImgId" class="imgSizeMy" src="lib/Images/NirajResize.jpeg" />
+                            <img id="blackWhiteId" class="imgSizeMy" src="lib/Images/NirajResize-BlackWhite.jpg" />
+                        </div>
+                        <!--<h1>Niraj Kumar</h1>-->
+                        
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="techInterestNew" id="techId">
+                <div><h4 class="aboutTechHead">Technology Interests</h4></div>
+                <div class="sub_TechDev">
+                    <div class="imgDivTech" id="imgScrlTechId">
+                        
+                        <!--<div class="iconDivPos">-->
+                            <img class="JavaIconSize" src="lib/Images/Apps-Java-icon.png" />
+                            <img class="JavaIconSize" src="lib/Images/Spring-Framework-Logo.png" />
+                            <img class="JavaIconSize" src="lib/Images/hibernate-logo.jpg" />
+                            <img class="JavaIconSize" src="lib/Images/html5CSS3JS.jpg" />
+                            <img class="JavaIconSize TechImgSize" src="lib/Images/fix-mean-stack-issues.jpg" />
+                            <img class="JavaIconSize" src="lib/Images/azuresqlsquaretransparent1.png" />
+                            
+                        <!--</div>    -->
+                        <!--<img class="imgSize" src="lib/Images/program-hd-wallpapers.jpg" />-->
+                    
+                    </div>
+                    <div class="TechIntDIV">
+                    
+                        <span style="color:rgba(0,255,255,1.3)">Technologies I have worked on</span> <br/><br class="breakDone"/> Core Java,  Java 8,  JEE,  Spring Core,     Spring MVC,  REST,  Hibernate,  CSS3,  HTML5,  Javascript,  jQuery,  Bootstrap,  SQL Server,  Git,  Maven,  Eclipse,  Angular JS,  SVN<br/><br/>
 
-                </div> 
-                <div class="imgDiv">
-                    <img class="imgSize" src="lib/Images/NirajResize.jpeg" />
+                        <span style="color:rgba(0,255,255,1.3)">Technologies I want to learn in future </span><br/><br class="breakDone"/> Spring Boot,  SOAP,  MongoDB,         Typescript,  Angular JS Latest Version,  Java Latest Version,  Node JS,  AWS cloud,  Microservice Architecture.
+                        
+                    </div>
                 </div>
             </div>
             
-            <div class="sub_container" id="techId">
+            <!--<div class="sub_container" id="techId">
                 <div class="imgDiv">
                     <img class="imgSize" src="lib/Images/angular5555.jpg" />
                 </div>
@@ -59,57 +113,117 @@
                     <span style="color:rgba(0,255,255,1.3)">Technologies I want to learn in future </span><br/><br/> Spring Boot,  SOAP,  MongoDB,         Typescript,  Angular JS Latest Version,  Java Latest Version,  Node JS,  AWS cloud,  Microservice Architecture.
 
                 </div>
+            </div>-->
+            
+            <div class="subExp_container" id="experienceId">
+                <div><h4 class="aboutExpHead">Professional Experience</h4></div>
+                <div class="ExpSubDiv">
+                    <div class="aboutExDIV">
+                        I am having 2.5+ years of Experience as a Full Stack Developer.<br/><br/>
+                        <table style="width: 100%;">
+                            <tr>
+                                <th style="color:rgba(0,255,255,1.3)" colspan="2">Experience and Company Details</th>
+                            </tr>
+
+                            <tr>
+                                <td>Company Name</td>
+                                <td>Years of Working</td>
+                            </tr>
+
+                            <tr>
+                                <td><a class="linkStar" href="http://trinitymobility.com/" target="_blank">Trinity Mobility Pvt. Ltd.</a></td>
+                                <td>1<sup>st</sup> Dec, 2015 to 5<sup>th</sup> March, 2018</td>
+                            </tr>
+                            <tr>
+                                <td><a class="linkStar" target="_blank" href="https://www.ibm.com/in-en/">IBM India Pvt. Ltd.</a><br/>(Payroll:<a target="_blank"class="linkStar" href="https://www.adecco.co.in/">Adecco India Pvt. Ltd.</a>)</td>
+                                <td>9<sup>th</sup> March, 2018 to Till Date</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="imgExpDiv">
+                        <img class="imgExpSize" src="lib/Images/Solutions-Puzzle-Box.gif" />
+                    </div>
+                </div>    
             </div>
             
-            <div class="sub_container" id="experienceId">
-                <div class="aboutDIV">
-                    <h4 class="aboutHead">Professional Experience</h4>
-
-                    I am having 2.5+ years of Experience as a Full Stack Developer.<br/><br/>
-                    <table style="width: 100%;">
-                        <tr>
-                            <th style="color:rgba(0,255,255,1.3)" colspan="2">Experience and Company Details</th>
-                        </tr>
-
-                        <tr>
-                            <td>Company Name</td>
-                            <td>Years of Working</td>
-                        </tr>
-
-                        <tr>
-                            <td><a class="linkStar" href="http://trinitymobility.com/" target="_blank">Trinity Mobility Pvt. Ltd.</a></td>
-                            <td>1<sup>st</sup> Dec, 2015 to 5<sup>th</sup> March, 2018</td>
-                        </tr>
-                        <tr>
-                            <td><a class="linkStar" target="_blank" href="https://www.ibm.com/in-en/">IBM India Pvt. Ltd.</a><br/>(Payroll:<a target="_blank"class="linkStar" href="https://www.adecco.co.in/">Adecco India Pvt. Ltd.</a>)</td>
-                            <td>9<sup>th</sup> March, 2018 to Till Date</td>
-                        </tr>
-                    </table>
-
-                </div>
-                <div class="imgDiv">
-                    <img class="imgSize" src="lib/Images/Solutions-Puzzle-Box.gif" />
-
-                </div>
-            </div>
             
-            <div class="sub_container" id="projectId">
-                <div class="imgDiv">
-                    <img class="imgSize" src="lib/Images/IOT&Web.gif" />
-                </div>
-                <div class="aboutDIV">
-                    <h4 class="aboutHead">Projects</h4>
+            <!-----------------------project Section start---------------------->
+            
+            
+            <div class="subPro_container" id="projectId">
+                <div><h4 class="aboutProHead">Projects Details</h4></div>
+                <div class="subProClass">
+                    <div class="imgProDiv">
+                        <img class="imgProSize" src="lib/Images/IOT&Web.gif" />
+                    </div><br/><br/>
+                    <div class="aboutProDIV TableDisplay">
 
-                    <table style="border-collapse: separate; border-spacing: 0 3em; font-size: 58%;width: 105%;">
-                        <tr>
-                            <th>Project Name</th>
-                            <th>Working Time</th>
-                            <th>Roles and Responsibilities</th>
-                        </tr>
-                        <tr>
-                            <td>Customer Relationship Manager</td>
-                            <td>Dec, 2015 to July, 2016</td>
-                            <td style="padding-left: 6%;">
+                        <table class="porTableClass">
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Working Time</th>
+                                <th>Roles and Responsibilities</th>
+                            </tr>
+                            <tr>
+                                <td>Customer Relationship Manager</td>
+                                <td>Dec, 2015 to July, 2016</td>
+                                <td style="padding-left: 6%;">
+                                    <ul style="text-align: left; list-style-type: decimal-leading-zero;">
+                                        <li>Dashboard and Other Modules as per requirements</li>
+                                        <li>Territory Management Using Google Map</li>
+                                        <li>Events and Date management Using Angular Calendar</li>
+                                        <li>Customer Details Management Using Different Modules</li>
+                                        <li>Dynamic Form creation for Admin Use</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Internate Of Premises Things</td>
+                                <td>July, 2016 to July, 2017</td>
+                                <td style="padding-left: 6%;">
+                                    <ul style="text-align: left; list-style-type: decimal-leading-zero;">
+                                        <li>Sensor location map using google map</li>
+                                        <li>Standard Operating Procedure</li>
+                                        <li>Rules Creation</li>
+                                        <li>Dashboard reading sensor data</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Logistics Connected</td>
+                                <td>July, 2017 to 5<sup>th</sup> March, 2018</td>
+                                <td style="padding-left: 6%;">
+                                    <ul style="text-align: left; list-style-type: decimal-leading-zero;">
+                                        <li>Dashboard and Other Modules as per requirements</li>
+                                        <li>Territory Management Using Google Map</li>
+                                        <li>Events and Date management Using Angular Calendar</li>
+                                        <li>Web and Mobile interaction with login and other details</li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Payment Enabler <br/>(Insurance cum Banking domain)</td>
+                                <td>9<sup>th</sup> March, 2018 to Till Now</td>
+                                <td style="padding-left: 6%;">
+                                    <ul style="text-align: left; list-style-type: decimal-leading-zero;"> 
+                                        <li>Change Request as per requirements</li>
+                                        <li>Policy Payment Gateway</li>
+                                        <li>Policy or Topup Renew</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>    
+                    
+                    <div class="AccordionToggle">
+                        <div id="accordion">
+                            <h3>1<sup>st</sup> Project Name : Customer Relationship Manager</h3>
+                          <div>
+                            <p>Project Duration : Dec, 2015 to July, 2016</p>  
+                            <p>Roles and Responsibilities : 
                                 <ul style="text-align: left; list-style-type: decimal-leading-zero;">
                                     <li>Dashboard and Other Modules as per requirements</li>
                                     <li>Territory Management Using Google Map</li>
@@ -117,51 +231,48 @@
                                     <li>Customer Details Management Using Different Modules</li>
                                     <li>Dynamic Form creation for Admin Use</li>
                                 </ul>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Internate Of Premises Things</td>
-                            <td>July, 2016 to July, 2017</td>
-                            <td style="padding-left: 6%;">
+                            </p>
+                          </div>
+                        <h3>2<sup>nd</sup> Project Name : Internate Of Premises Things</h3>
+                          <div>
+                            <p>Project Duration : July, 2016 to July, 2017</p>  
+                            <p>Roles and Responsibilities : 
                                 <ul style="text-align: left; list-style-type: decimal-leading-zero;">
-                                    <li>Sensor location map using google map</li>
-                                    <li>Standard Operating Procedure</li>
-                                    <li>Rules Creation</li>
-                                    <li>Dashboard reading sensor data</li>
-                                </ul>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Logistics Connected</td>
-                            <td>July, 2017 to 5<sup>th</sup> March, 2018</td>
-                            <td style="padding-left: 6%;">
+                                        <li>Sensor location map using google map</li>
+                                        <li>Standard Operating Procedure</li>
+                                        <li>Rules Creation</li>
+                                        <li>Dashboard reading sensor data</li>
+                                    </ul>
+                              </p>
+                          </div>
+                          <h3>3<sup>rd</sup> Project Name : Logistics Connected</h3>
+                          <div>
+                            <p>Project Duration : July, 2017 to 5<sup>th</sup> March, 2018</p>  
+                            <p>
+                              Roles and Responsibilities : 
                                 <ul style="text-align: left; list-style-type: decimal-leading-zero;">
-                                    <li>Dashboard and Other Modules as per requirements</li>
-                                    <li>Territory Management Using Google Map</li>
-                                    <li>Events and Date management Using Angular Calendar</li>
-                                    <li>Web and Mobile interaction with login and other details</li>
-                                </ul>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Payment Enabler <br/>(Insurance cum Banking domain)</td>
-                            <td>9<sup>th</sup> March, 2018 to Till Now</td>
-                            <td style="padding-left: 6%;">
+                                        <li>Dashboard and Other Modules as per requirements</li>
+                                        <li>Territory Management Using Google Map</li>
+                                        <li>Events and Date management Using Angular Calendar</li>
+                                        <li>Web and Mobile interaction with login and other details</li>
+                                    </ul>
+                              </p>
+                          </div>
+                          <h3>4<sup>th</sup> Project Name : Payment Enabler(Insurance cum Banking domain)</h3>
+                          <div>
+                              <p>Project Duration : 9<sup>th</sup> March, 2018 to Till Now</p>  
+                              <p>Roles and Responsibilities : 
                                 <ul style="text-align: left; list-style-type: decimal-leading-zero;"> 
                                     <li>Change Request as per requirements</li>
                                     <li>Policy Payment Gateway</li>
                                     <li>Policy or Topup Renew</li>
                                 </ul>
-                            </td>
-                        </tr>
-                    </table>
-
-                </div>
+                              </p>  
+                          </div>
+                        </div>
+                    </div>    
             </div>
-            
+            </div>
         </div>
         
     </body>
